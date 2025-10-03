@@ -11,7 +11,7 @@ int main() {
         cin >> n;
 
         vector<int> a(n);
-        for (int &t : a) cin >> t;
+        for (int &x : a) cin >> x;
 
         sort(a.begin(), a.end());
 
