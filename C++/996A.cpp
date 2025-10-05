@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -8,22 +8,18 @@ int main() {
     cin >> n;
 
     int count = 0;
+    vector<int> coins = {1, 5, 10, 20, 100};
 
-    while (n) {
-        if (n >= 100) {
-            n -= 100;
-        } else if (n >= 20) {
-            n -= 20;
-        } else if (n >= 10) {
-            n -= 10;
-        } else if (n >= 5) {
-            n -= 5;
-        } else {
-            n -= 1;
-        }
-        count++;
+    for (int i = coins.size() - 1; i >= 0; i--) {
+        int coin = coins[i];
+        int cur = n / coin;
+        count += cur;
+        n -= cur * coin;
     }
+
     cout << count << endl;
+
+    
 
     return 0;
 }
