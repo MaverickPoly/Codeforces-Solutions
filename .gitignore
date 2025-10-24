@@ -1,0 +1,10 @@
+*.exe
+.vscode
+.idea
+.vs
+Usaco
+Lyceum
+DynamicProgramming
+
+main.cpp
+main.exe
