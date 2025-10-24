@@ -1,5 +1,7 @@
 *.exe
 *.out
+!*/
+!*.*
 
 .vscode
 .idea
