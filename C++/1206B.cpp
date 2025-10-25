@@ -20,7 +20,7 @@ int main() {
         long long distance_one = abs(1 - ar[i]);
         long long distance_m_one = abs(-1 - ar[i]);
 
-        if (distance_one < distance_m_one) {
+        if (distance_one <= distance_m_one) {
             cnt1++;
             total += distance_one;
         } else {
@@ -39,7 +39,7 @@ int main() {
     if (cntm1 % 2 == 0 or cnt0 > 0) {
         total += cnt0;
     } else {
-        total += cntm1 + 1;
+        total += 2;
     }
 
     cout << total << endl;
